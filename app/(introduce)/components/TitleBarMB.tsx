@@ -45,8 +45,8 @@ export default function TitleBarMB() {
                     <NavLink icon={Home} label={'Home'} to={'/browse'}/>
                     <NavLink icon={Briefcase} label={'Professional'} to={'/browse'}/>
                     <NavLink icon={Swords} label={'Skills'} to={'/skills'}/>
-                    <NavLink icon={FolderGitIcon} label={'Projects'} to={'/browse'}/>
-                    <NavLink icon={Scale} label={'Certifications'} to={'/browse'}/>
+                    <NavLink icon={FolderGitIcon} label={'Projects'} to={'/projects'}/>
+                    <NavLink icon={Scale} label={'Certifications'} to={'/certifications'}/>
                 </div>
             </SheetHeader>
         </SheetContent>

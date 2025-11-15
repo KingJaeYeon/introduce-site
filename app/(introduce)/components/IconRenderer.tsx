@@ -15,8 +15,14 @@ export function IconRenderer() {
     let icon = Profile01;
 
     switch (pathname) {
+        case '/projects':
+            icon = Profile02
+            break;
         case '/skills':
             icon = Profile03
+            break;
+        case '/certifications':
+            icon = Profile04
             break;
     }
 

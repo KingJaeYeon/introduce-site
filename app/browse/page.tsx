@@ -13,9 +13,9 @@ export default function Page() {
         <div
             className={'grid grid-cols-2 sm:flex justify-center items-center px-8 sm:px-10 gap-8 sm:gap-5 sm:gap-10 mb-[10rem] w-full'}>
             <Card link={''} src={Profile01} label={'이력서'}/>
-            <Card link={''} src={Profile02} label={'프로젝트'}/>
+            <Card link={'/projects'} src={Profile02} label={'프로젝트'}/>
             <Card link={'/skills'} src={Profile03} label={'스킬'}/>
-            <Card link={''} src={Profile04} label={'인증'}/>
+            <Card link={'/certifications'} src={Profile04} label={'인증'}/>
         </div>
     </div>)
 }
