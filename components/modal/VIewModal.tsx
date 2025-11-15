@@ -4,25 +4,25 @@ import {
     DialogDescription,
     DialogHeader,
     DialogTitle,
-    DialogTrigger
 } from "@/components/ui/dialog";
 import React from "react";
+import Image from "next/image";
 
 interface Props {
     onClose: () => void;
-    data?: {
+    data: {
         link: string
+        title: string
     };
 }
 
 export function ViewModal({onClose, data}: Props) {
     return <Dialog open={true} onOpenChange={onClose}>
-        <DialogContent  className="bg-secondary max-w-[18rem] border-2 p-4">
+        <DialogContent className="bg-secondary max-w-[25rem] border-2 p-4">
             <DialogHeader>
-                <DialogTitle>Are you absolutely sure?</DialogTitle>
+                <DialogTitle>{data.title}</DialogTitle>
                 <DialogDescription>
-                    This action cannot be undone. This will permanently delete your account
-                    and remove your data from our servers.
+                    <Image src={data.link} alt={'image'} width={500} height={700} priority/>
                 </DialogDescription>
             </DialogHeader>
         </DialogContent>
