@@ -16,11 +16,12 @@ import {IconPostgresql} from "@/components/assets/icons/postgresql";
 import {IconMysql} from "@/components/assets/icons/mysql";
 import {IconPrisma} from "@/components/assets/icons/prisma";
 import {Content} from "@/app/(introduce)/skills/components/content";
+import {IconHtml} from "@/components/assets/icons/html";
 
 export type DataType = { icon: ReactElement, title: string, description: string }
 
 const frontend: DataType[] = [
-    {icon: <IconReact className={'w-[30px] h-[30px]'}/>, title: 'HTML&CSS', description: 'Web Markup and Styling'},
+    {icon: <IconHtml className={'w-[30px] h-[30px] text-red-600'}/>, title: 'HTML&CSS', description: 'Web Markup and Styling'},
     {icon: <Nodejs className={'w-[30px] h-[30px]'}/>, title: 'JavaScript', description: 'Scripting Language'},
     {icon: <IconTS className={'w-[30px] h-[30px]'}/>, title: 'TypeScript', description: 'Type-safe JavaScript'},
     {
