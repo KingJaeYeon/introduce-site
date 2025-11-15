@@ -5,6 +5,7 @@ import Link from "next/link";
 import {IconRenderer} from "@/app/(introduce)/components/IconRenderer";
 import {NavLink} from "@/app/(introduce)/components/NavLinks";
 import TitleBarMB from "@/app/(introduce)/components/TitleBarMB";
+import ModalRenderer from "@/app/components/ModalRenderer";
 
 export default function Layout({children}: { children: React.ReactNode; }) {
     return <div className="flex min-h-svh w-full flex-col justify-center">
@@ -12,6 +13,7 @@ export default function Layout({children}: { children: React.ReactNode; }) {
         <div className="scrollWidth3 relative flex flex-1 flex-col gap-4 overflow-auto">
             <div className={'absolute h-full w-full p-4 pt-0 top-[70px]'}>{children}</div>
         </div>
+        <ModalRenderer/>
     </div>
 }
 
