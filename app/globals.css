@@ -1,7 +1,20 @@
 @import "tailwindcss";
 @import 'tw-animate-css';
 @plugin 'tailwindcss-animate';
+
 @custom-variant dark (&:is(.dark *));
+
+@layer utilities {
+  .scrollWidth3 {
+    scrollbar-width: thin;
+    scrollbar-color: #888888 transparent;
+  }
+
+  .scrollNone {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -120,3 +133,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes fadeSlideIn {
+  0%{
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

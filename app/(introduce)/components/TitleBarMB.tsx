@@ -5,9 +5,26 @@ import {useMediaQuery} from "@/hooks/useMediaQuery";
 import Image from "next/image";
 import TitleLogo from '@/public/title.png'
 import Link from "next/link";
+import {useEffect, useState} from "react";
 
 export default function TitleBarMB() {
-    const isInnerTbSize = useMediaQuery('(max-width: 768px)')
+    const [mounted, setMounted] = useState(false);
+    const isInnerTbSize = useMediaQuery('(max-width: 768px)');
+
+    // hydration-safe mount 플래그
+    useEffect(() => {
+        function start() {
+            setMounted(true);
+        }
+        start()
+    }, []);
+
+    // SSR 단계: 아무것도 렌더하지 않음 → HTML mismatch 사라짐
+    if (!mounted) return null;
+
+    // CSR 단계: 실제 화면 크기와 일치하는 값만 렌더됨
+    if (!isInnerTbSize) return null;
+
 
     if (!isInnerTbSize) {
         return null
@@ -32,7 +49,6 @@ export default function TitleBarMB() {
                     <NavLink icon={Scale} label={'Certifications'} to={'/browse'}/>
                 </div>
             </SheetHeader>
-
         </SheetContent>
     </Sheet>
 }
