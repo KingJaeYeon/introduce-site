@@ -4,6 +4,7 @@ import {IconSql} from "@/components/assets/icons/sql";
 import {Content} from "@/app/(introduce)/certifications/components/content";
 import {Udemy} from "@/components/assets/icons/udemy";
 import {IconTest} from "@/components/assets/icons/test";
+import {IconJava} from "@/components/assets/icons/java";
 
 export type DataType = { icon: ReactElement, title: string, description: string, link: string, isModal: boolean };
 
@@ -28,6 +29,13 @@ const arr: DataType[] = [
         description: '인프런',
         link: 'https://www.inflearn.com/certificate/498580-329996-12043790',
         isModal: false,
+    },
+    {
+        icon: <IconJava className={'w-[30px] h-[30px] text-red-600'}/>,
+        title: '자바(JAVA)기반 공공데이터 융합 개발자 양성과정A15',
+        description: 'KH정보교육원 강남지원',
+        link: '/java.png',
+        isModal: true,
     },
     {
         icon: <IconTest className={'w-[30px] h-[30px]'}/>,
