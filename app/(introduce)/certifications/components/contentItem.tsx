@@ -10,7 +10,8 @@ export function ContentItem({
   icon,
   link,
   isModal,
-}: DataType) {
+  index,
+}: DataType & { index: number }) {
   const { openModal } = useModalStore();
   return (
     <div
@@ -19,9 +20,9 @@ export function ContentItem({
           ? openModal('view', { link, title })
           : window.open(link, '_blank')
       }
-      style={{ animationIterationCount: 1 }}
+      style={{ animationIterationCount: 1, animationDelay: `${index * 200}ms` }}
       className={
-        'flex animate-[fadeSlideUp] cursor-pointer flex-col rounded-lg bg-[#1e1e1e] p-5 shadow-[0_4px_10px_#0000004d] duration-500 hover:scale-105 hover:shadow-[0_8px_20px_#ff000080]'
+        'flex animate-[fadeSlideUp_.5s_ease-out_forwards] cursor-pointer flex-col rounded-lg bg-[#1e1e1e] p-5 opacity-0 shadow-[0_4px_10px_#0000004d] duration-500 hover:scale-105 hover:shadow-[0_8px_20px_#ff000080]'
       }
     >
       <div className={'mb-2'}>{icon}</div>

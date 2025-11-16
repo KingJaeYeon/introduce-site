@@ -11,7 +11,7 @@ export function Content({ data }: { data: DataType[] }) {
         }
       >
         {data.map((value, i) => (
-          <ContentItem key={i} {...value} />
+          <ContentItem key={i} {...value} index={i} />
         ))}
       </div>
     </div>
