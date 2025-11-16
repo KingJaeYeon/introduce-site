@@ -17,6 +17,8 @@ import {IconMysql} from "@/components/assets/icons/mysql";
 import {IconPrisma} from "@/components/assets/icons/prisma";
 import {Content} from "@/app/(introduce)/skills/components/content";
 import {IconHtml} from "@/components/assets/icons/html";
+import {IconFigma} from "@/components/assets/icons/figma";
+import {IconJira} from "@/components/assets/icons/jira";
 
 export type DataType = { icon: ReactElement, title: string, description: string }
 
@@ -67,6 +69,11 @@ const db: DataType[] = [
     {icon: <IconPrisma className={'w-[33px] h-[33px]'}/>, title: 'Prisma', description: 'JS 및 TS에서 사용하는 ORM Library'},
 ]
 
+const tools: DataType[] = [
+    {icon: <IconFigma className={'w-[33px] h-[33px]'}/>, title: 'Figma', description: '디자이너와 협업툴'},
+    {icon: <IconJira className={'w-[33px] h-[33px]'}/>, title: 'Jira', description: 'Task 관리툴'},
+]
+
 export default function SkillPage() {
     return (
         <div className={'flex flex-1 justify-center pt-[20px] px-10 h-full'}>
@@ -75,6 +82,7 @@ export default function SkillPage() {
                 <Content data={backend} title={'Backend'}/>
                 <Content data={cloud} title={'Cloud & DevOps'}/>
                 <Content data={db} title={'Databases & ORM'}/>
+                <Content data={tools} title={'Tools'}/>
                 <div className={'pb-[50px]'}/>
             </div>
         </div>

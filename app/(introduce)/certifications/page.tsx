@@ -47,7 +47,7 @@ const arr: DataType[] = [
 ]
 
 
-export default function SkillPage() {
+export default function CertificationPage() {
     return (
         <div className={'flex flex-1 justify-center pt-[20px] px-10 h-full'}>
             <div className={'w-[970px] flex flex-col gap-[50px] pt-[100px]'}>
