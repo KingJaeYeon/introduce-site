@@ -2,6 +2,7 @@
 import { ModalType, useModalStore } from '@/store/modalStore';
 import { animated, config, useTransition } from '@react-spring/web';
 import { ViewModal } from '@/components/modal/VIewModal';
+import LightboxModal from '@/components/modal/LightboxModal';
 
 export default function ModalRenderer() {
   const { type, isOpen, closeModal, data } = useModalStore();
@@ -19,6 +20,7 @@ export default function ModalRenderer() {
 
   const modals: Record<ModalType, any> = {
     view: <ViewModal onClose={closeModal} data={data} />,
+    lightbox: <LightboxModal onClose={closeModal} data={data} />,
   };
 
   return transitions((style, item) =>

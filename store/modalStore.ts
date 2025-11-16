@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type ModalType = 'view';
+export type ModalType = 'view' | 'lightbox';
 
 export interface ModalState {
   type: ModalType | null;
