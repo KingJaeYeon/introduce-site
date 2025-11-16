@@ -6,14 +6,19 @@ import { IconRenderer } from '@/app/(introduce)/components/IconRenderer';
 import { NavLink } from '@/app/(introduce)/components/NavLinks';
 import TitleBarMB from '@/app/(introduce)/components/TitleBarMB';
 import ModalRenderer from '@/app/components/ModalRenderer';
+import ScrollTopBtn from '@/app/(introduce)/components/ScrollTopBtn';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-svh w-full flex-col justify-center">
       <TitleBar />
-      <div className="scrollWidth3 relative flex flex-1 flex-col gap-4 overflow-auto">
+      <div
+        id={'main-layout'}
+        className="scrollWidth3 relative flex flex-1 flex-col gap-4 overflow-auto"
+      >
         <div className={'absolute top-[70px] w-full p-4 pt-0'}>{children}</div>
       </div>
+      <ScrollTopBtn />
       <ModalRenderer />
     </div>
   );
