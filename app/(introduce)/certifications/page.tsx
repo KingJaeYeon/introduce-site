@@ -1,10 +1,10 @@
 import React, {ReactElement} from "react";
-import {Nodejs} from "@/components/assets/icons/nodejs";
-import {IconSql} from "@/components/assets/icons/sql";
+import Nodejs from "@/public/assets/nodejs.svg";
+import IconSql from "@/public/assets/sql.svg";
 import {Content} from "@/app/(introduce)/certifications/components/content";
-import {Udemy} from "@/components/assets/icons/udemy";
-import {IconTest} from "@/components/assets/icons/test";
-import {IconJava} from "@/components/assets/icons/java";
+import Udemy from "@/public/assets/udemy.svg";
+import IconTest from "@/public/assets/test.svg";
+import IconJava from "@/public/assets/java.svg";
 
 export type DataType = { icon: ReactElement, title: string, description: string, link: string, isModal: boolean };
 

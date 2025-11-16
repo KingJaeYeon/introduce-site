@@ -1,24 +1,28 @@
-import {AWS} from "@/components/assets/icons/aws";
+import AWS from '@/public/assets/aws.svg'
+import IconFigma from '@/public/assets/figma.svg'
+import IconJira from '@/public/assets/jira.svg'
+import IconTS from "@/public/assets/typescript.svg";
+import IconHtml from "@/public/assets/html.svg";
+import IconZustand from "@/public/assets/zustand.svg";
+import IconPostgresql from "@/public/assets/postgresql.svg";
+import IconMysql from "@/public/assets/mysql.svg";
+import IconPrisma from "@/public/assets/prisma.svg";
+import IconShadcn from '@/public/assets/shadcn.svg'
+import ElectronIcon from "@/public/assets/electron.svg";
+import IconTailwind from "@/public/assets/tailwind.svg";
+import IconReactQuery from "@/public/assets/react-query.svg";
+import Docker from "@/public/assets/docker.svg";
+import Nginx from "@/public/assets/nginx.svg";
+import Pm2 from "@/public/assets/pm2.svg";
+import IconNextjs from "@/public/assets/nextjs.svg";
+import IconReact from "@/public/assets/react.svg";
+import Nodejs from "@/public/assets/nodejs.svg";
+import Nestjs from "@/public/assets/nestjs.svg";
 import React, {ReactElement} from "react";
-import {Nodejs} from "@/components/assets/icons/nodejs";
-import {Nestjs} from "@/components/assets/icons/nestjs";
-import {Docker} from "@/components/assets/icons/docker";
-import {Nginx} from "@/components/assets/icons/nginx";
-import {Pm2} from "@/components/assets/icons/pm2";
-import {IconReact} from "@/components/assets/icons/react";
-import {IconNextjs} from "@/components/assets/icons/nextjs";
-import {ElectronIcon} from "@/components/assets/icons/electron";
-import {IconTailwind} from "@/components/assets/icons/tailwind";
-import {IconReactQuery} from "@/components/assets/icons/reactquery";
-import {IconZustand} from "@/components/assets/icons/zustand";
-import {IconTS} from "@/components/assets/icons/ts";
-import {IconPostgresql} from "@/components/assets/icons/postgresql";
-import {IconMysql} from "@/components/assets/icons/mysql";
-import {IconPrisma} from "@/components/assets/icons/prisma";
+
+
+
 import {Content} from "@/app/(introduce)/skills/components/content";
-import {IconHtml} from "@/components/assets/icons/html";
-import {IconFigma} from "@/components/assets/icons/figma";
-import {IconJira} from "@/components/assets/icons/jira";
 
 export type DataType = { icon: ReactElement, title: string, description: string }
 
@@ -37,7 +41,7 @@ const frontend: DataType[] = [
         title: 'Tailwind',
         description: 'CSS Framework'
     },
-    {icon: <IconReact className={'w-[30px] h-[30px] text-white'}/>, title: 'Shadcn', description: 'UI Library'},
+    {icon: <IconShadcn className={'w-[30px] h-[30px] text-red-600'}/>, title: 'Shadcn', description: 'UI Library'},
     {icon: <IconZustand className={'w-[30px] h-[30px]'}/>, title: 'Zustand', description: 'React 상태관리툴'},
     {icon: <IconReactQuery className={'w-[30px] h-[30px]'}/>, title: 'React-Query', description: 'Server 상태관리툴'},
     {
@@ -77,6 +81,7 @@ const tools: DataType[] = [
 export default function SkillPage() {
     return (
         <div className={'flex flex-1 justify-center pt-[20px] px-10 h-full'}>
+
             <div className={'w-[970px] flex flex-col gap-[50px]'}>
                 <Content data={frontend} title={'Frontend'}/>
                 <Content data={backend} title={'Backend'}/>
