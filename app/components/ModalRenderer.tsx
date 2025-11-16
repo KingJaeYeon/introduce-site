@@ -1,8 +1,7 @@
-"use client"
+'use client';
 import { ModalType, useModalStore } from '@/store/modalStore';
 import { animated, config, useTransition } from '@react-spring/web';
-import {ViewModal} from "@/components/modal/VIewModal";
-
+import { ViewModal } from '@/components/modal/VIewModal';
 
 export default function ModalRenderer() {
   const { type, isOpen, closeModal, data } = useModalStore();
@@ -23,7 +22,7 @@ export default function ModalRenderer() {
   };
 
   return transitions((style, item) =>
-    item ? <animated.div style={style}>{modals[item]}</animated.div> : null
+    item ? <animated.div style={style}>{modals[item]}</animated.div> : null,
   );
 }
 
