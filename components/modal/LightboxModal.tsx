@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
+import { createPortal } from 'react-dom';
 
 interface LightboxModalProps {
   onClose: () => void;
@@ -11,9 +12,18 @@ interface LightboxModalProps {
 export default function LightboxModal({ onClose, data }: LightboxModalProps) {
   const { imgUrl } = data;
 
-  return (
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, []);
+
+  return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center"
+      className="animate-in fade-in-0 fixed inset-0 z-50 flex items-center justify-center"
       style={{
         backgroundColor: 'rgba(0, 0, 0, 0.75)',
       }}
@@ -31,6 +41,7 @@ export default function LightboxModal({ onClose, data }: LightboxModalProps) {
         className="text-gray-white absolute top-2 right-2 h-7 w-7 cursor-pointer transition-opacity hover:opacity-80"
         onClick={onClose}
       />
-    </div>
+    </div>,
+    document.body,
   );
 }
