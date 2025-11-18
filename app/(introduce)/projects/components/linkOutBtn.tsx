@@ -7,7 +7,7 @@ export function LinkOutBtn({ label, href }: { label: string; href: string }) {
     <Button
       variant={'outline'}
       size={'lg'}
-      className={'w-full font-semibold'}
+      className={'w-full flex-1 font-semibold'}
       onClick={() => window.open(href, '_blank')}
     >
       {label}
