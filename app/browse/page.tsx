@@ -50,7 +50,11 @@ function Card({
         'flex min-h-[84px] min-w-[84px] flex-1 flex-col gap-3 sm:max-w-[160px]'
       }
     >
-      <div className={'relative overflow-hidden rounded-xl pt-[85%]'}>
+      <div
+        className={
+          'relative overflow-hidden rounded-xl pt-[85%] hover:outline-4 hover:outline-white'
+        }
+      >
         <Image
           src={src}
           alt={'profile01'}

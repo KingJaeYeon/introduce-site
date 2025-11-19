@@ -36,14 +36,20 @@ export const data: DataType[] = [
     introduction: [''].join('\n'),
     functions: [
       '어떤 넷플릭스 포토폴리오에 영감을 받아 해당 사이트 디자인에 제 스타일을 녹여 만든 포토폴리오입니다. ',
-      '심플하고 깔끔한 디자인과 애니메이션으로 으로 포토폴리오를 보는 사람들 기억에 남을 수 있도록 구성했습니다.',
+      '심플하고 깔끔한 디자인과 애니메이션으로 포토폴리오를 보는 사람들 기억에 남을 수 있도록 구성했습니다.',
       '추후에 SEO까지 고려해서 NextJS를 선택했습니다.',
       '소리를 켜놓으면 사이트 진입 시 넷플릭스 특유의 오프닝 bmg를 확인할 수 있습니다.',
       'ScrollTop 버튼 구현',
       'zustand 기반 modalRenderer를 구현해서 추후에 modal 추가하기 용이',
     ],
     role: [],
-    links: [],
+    links: [
+      {
+        label: '깃허브',
+        href: 'https://github.com/KingJaeYeon/introduce-site',
+      },
+      { label: '보기', href: '' },
+    ],
     images: [
       '/projects/introduce-site/img03.png',
       '/projects/introduce-site/img08.png',
@@ -158,7 +164,13 @@ export const data: DataType[] = [
       ].join('\n'),
     ],
     role: [],
-    links: [],
+    links: [
+      { label: '깃허브', href: 'https://github.com/KingJaeYeon/MyPrivateApp' },
+      {
+        label: '관련영상 보기',
+        href: 'https://www.youtube.com/watch?v=64D69wrDriY&feature=youtu.be',
+      },
+    ],
     images: [
       '/projects/private-app/img11.png',
       '/projects/private-app/img02.png',
