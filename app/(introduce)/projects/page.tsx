@@ -99,6 +99,18 @@ export default function ProjectPage() {
                     ))}
                   </div>
                 </div>
+                {item.introduction !== '' && (
+                  <div className={'flex flex-col'}>
+                    <p className={'text-sm font-bold md:text-base'}>소개</p>
+                    <div
+                      className={
+                        'text-muted-foreground text-0.5xs mt-1 h-fit resize-none whitespace-pre-wrap outline-none'
+                      }
+                    >
+                      {item.introduction}
+                    </div>
+                  </div>
+                )}
                 {item.functions.length >= 1 && (
                   <div className={'flex flex-col'}>
                     <p className={'text-sm font-bold md:text-base'}>
@@ -130,7 +142,10 @@ export default function ProjectPage() {
                 <div className={'flex flex-col gap-1 lg:hidden'}>
                   <p className={'text-sm font-bold md:text-base'}>스크린샷</p>
                   <div className={'flex items-center gap-2 overflow-auto'}>
-                    <ImgContentRenderer images={item.images} />
+                    <ImgContentRenderer
+                      images={item.images}
+                      isFrist={index === 0}
+                    />
                   </div>
                 </div>
                 <div className={'mb-2 flex w-full gap-2'}>
@@ -146,7 +161,10 @@ export default function ProjectPage() {
               >
                 <div className={'absolute top-0'}>
                   <div className={'inline-flex w-full flex-wrap gap-4'}>
-                    <ImgContentRenderer images={item.images} />
+                    <ImgContentRenderer
+                      images={item.images}
+                      isFrist={index === 0}
+                    />
                   </div>
                 </div>
               </div>

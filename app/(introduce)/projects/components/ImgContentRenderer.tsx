@@ -4,20 +4,28 @@ import Image from 'next/image';
 import React from 'react';
 import { useModalStore } from '@/store/modalStore';
 
-export default function ImgContentRenderer({ images }: { images: string[] }) {
+export default function ImgContentRenderer({
+  images,
+  isFrist,
+}: {
+  images: string[];
+  isFrist: boolean;
+}) {
   const isLg = useMediaQuery('(max-width: 1024px)');
   const { openModal } = useModalStore();
-  const displayImages = isLg ? images.slice(0, 3) : images;
+  const displayImages = isLg ? images.slice(0, 5) : images;
 
   return displayImages.map((item, index) => (
     <Image
       onClick={() => openModal('lightbox', { imgUrl: item })}
       key={index}
       src={item}
-      className={'h-[130px] w-auto object-center'}
+      className={'h-[130px] w-auto border object-center'}
       alt={'alt'}
       width={200}
       height={130}
+      priority={isFrist} // 첫번째 이미지만 미리 로딩
+      loading={isFrist ? 'eager' : 'lazy'} // 나머지는 lazy
     />
   ));
 }
