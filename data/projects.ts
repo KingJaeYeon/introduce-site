@@ -43,6 +43,7 @@ export const data: DataType[] = [
       '소리를 켜놓으면 사이트 진입 시 넷플릭스 특유의 오프닝 bmg를 확인할 수 있습니다.',
       'ScrollTop 버튼 구현',
       'zustand 기반 modalRenderer를 구현해서 추후에 modal 추가하기 용이',
+      'svg viewbox 크게 잡혀있으면 @svgr/webpack 처리 / viewbox 18~24는 컴포넌트화',
     ],
     role: [],
     links: [
@@ -208,7 +209,10 @@ export const data: DataType[] = [
       frameworks: ['NextJS', 'NestJS'],
       developers: '5명',
     },
-    introduction: '',
+    introduction: [
+      '퇴사직전에 진행했었던 프로젝트입니다.',
+      '회사 자금상황이 좋지 않았고 월급도 밀렸지만 오픈까지는 마무리하고 퇴사했습니다.',
+    ].join('\n'),
     duration: '2024.09 ~ 2025.01.31(퇴사)',
     libraries: [
       'shadcn',
@@ -280,6 +284,51 @@ export const data: DataType[] = [
       '/projects/vender/menu02.png',
       '/projects/vender/menu03.png',
       '/projects/vender/menu04.png',
+    ],
+  },
+  {
+    title: 'CoinPickle 가이드라인',
+    id: 'coinpickle-guideline',
+    type: 'toy',
+    meta: {
+      device: '반응형 웹',
+      contribution: '100%',
+      others: [],
+      frameworks: ['NextJS'],
+      developers: '1명',
+    },
+    duration: '2024.08',
+    introduction: [
+      'Coinpickle 리뉴얼 당시 개인적으로 가이드라인 연습 & 기존 보유중인 SVG파일 정리를 위해 만든 프로젝트입니다.',
+      '현재는 개인적으로 SVG파일 필요할 때 셔칭용으로 사용 중 입니다.',
+    ].join('\n'),
+    libraries: ['shadcn', 'tailwind'],
+    functions: [],
+    role: [],
+    links: [
+      {
+        label: '깃허브',
+        href: 'https://github.com/KingJaeYeon/boilerplate-nextjs',
+      },
+      {
+        label: '보기',
+        href: 'https://boilerplate-nextjs-zeta.vercel.app/analyze-ui',
+      },
+    ],
+    images: [
+      '/projects/guideline/guideline01.png',
+      '/projects/guideline/guideline11.png',
+      '/projects/guideline/guideline12.png',
+      '/projects/guideline/guideline13.png',
+      '/projects/guideline/guideline06.png',
+      '/projects/guideline/guideline02.png',
+      '/projects/guideline/guideline03.png',
+      '/projects/guideline/guideline04.png',
+      '/projects/guideline/guideline05.png',
+      '/projects/guideline/guideline07.png',
+      '/projects/guideline/guideline08.png',
+      '/projects/guideline/guideline09.png',
+      '/projects/guideline/guideline10.png',
     ],
   },
   {

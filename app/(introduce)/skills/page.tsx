@@ -85,7 +85,7 @@ const backend: DataType[] = [
   {
     icon: <Nodejs className={'h-[30px] w-[30px]'} />,
     title: 'Node.js',
-    description: 'Backend Runtime',
+    description: 'JS Runtime',
   },
   {
     icon: <Nestjs className={'h-[30px] w-[30px]'} />,

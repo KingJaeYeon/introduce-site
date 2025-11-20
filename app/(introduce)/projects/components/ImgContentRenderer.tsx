@@ -27,7 +27,7 @@ export default function ImgContentRenderer({
       onClick={() => openModal('lightbox', { imgUrl: item })}
       key={index}
       src={item}
-      className={'h-[130px] w-auto border object-center'}
+      className={'h-[130px] w-auto border object-center hover:scale-105'}
       alt={'alt'}
       width={200}
       height={130}
