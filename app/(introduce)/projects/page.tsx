@@ -1,21 +1,25 @@
+'use server';
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import { LinkOutBtn } from '@/app/(introduce)/projects/components/linkOutBtn';
 import ImgContentRenderer from '@/app/(introduce)/projects/components/ImgContentRenderer';
 import { data, DataType } from '@/data/projects';
+import ScrollToHash from '@/app/(introduce)/projects/components/ScrollToHash';
 
-export default function ProjectPage() {
+export default async function ProjectPage() {
   return (
     <div className={'flex h-full flex-1 justify-center pt-[20px] md:px-10'}>
+      <ScrollToHash />
       <div className={'flex w-[1200px] flex-col gap-[50px]'}>
         {data.map((item: DataType, index: number) => {
           const isLast = index === data.length - 1;
           return (
             <div
               key={index}
+              id={item.id}
               className={cn(
-                'border-border relative flex items-center gap-10',
+                'border-border relative flex scroll-mt-[100px] items-center gap-10',
                 !isLast && 'border-b-2 pb-5',
               )}
             >

@@ -1,5 +1,6 @@
 export type DataType = {
   title: string;
+  id: string;
   type: 'company' | 'toy';
   meta: {
     device: '반응형 웹' | 'PC' | '모바일' | '데스크탑 앱';
@@ -23,6 +24,7 @@ export type DataType = {
 export const data: DataType[] = [
   {
     title: 'Introduce Site',
+    id: 'introduce-site',
     type: 'toy',
     meta: {
       device: '반응형 웹',
@@ -63,6 +65,7 @@ export const data: DataType[] = [
   },
   {
     title: 'Private App',
+    id: 'private-app',
     type: 'toy',
     meta: {
       device: '데스크탑 앱',
@@ -196,6 +199,7 @@ export const data: DataType[] = [
   },
   {
     title: '대규모 게임 플랫폼',
+    id: 'h-game',
     type: 'company',
     meta: {
       device: '반응형 웹',
@@ -280,6 +284,7 @@ export const data: DataType[] = [
   },
   {
     title: 'CoinPickle 리뉴얼',
+    id: 'coinpickle-v2',
     type: 'company',
     meta: {
       device: '반응형 웹',
@@ -345,6 +350,7 @@ export const data: DataType[] = [
   },
   {
     title: 'Excoinz admin 리뉴얼',
+    id: 'excoinz-admin',
     type: 'company',
     meta: {
       device: 'PC',
@@ -383,6 +389,7 @@ export const data: DataType[] = [
   },
   {
     title: 'Excoinz IG 솔루션',
+    id: 'excoinz-ig',
     type: 'company',
     meta: {
       device: 'PC',
@@ -414,6 +421,7 @@ export const data: DataType[] = [
   },
   {
     title: 'The Solve',
+    id: 'thesolve',
     type: 'company',
     meta: {
       device: '반응형 웹',
@@ -496,6 +504,7 @@ export const data: DataType[] = [
   },
   {
     title: 'Excoinz',
+    id: 'excoinz',
     type: 'company',
     meta: {
       device: '반응형 웹',

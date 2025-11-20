@@ -1,7 +1,7 @@
 'use client';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useModalStore } from '@/store/modalStore';
 
 export default function ImgContentRenderer({
@@ -13,7 +13,14 @@ export default function ImgContentRenderer({
 }) {
   const isLg = useMediaQuery('(max-width: 1024px)');
   const { openModal } = useModalStore();
-  const displayImages = isLg ? images.slice(0, 5) : images;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // 마운트 전에는 전체, 마운트 후에는 미디어쿼리 적용
+  const displayImages = !mounted ? images : isLg ? images.slice(0, 5) : images;
 
   return displayImages.map((item, index) => (
     <Image

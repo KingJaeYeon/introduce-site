@@ -9,6 +9,7 @@ export function NavLink({ label, to }: { label: string; to: string }) {
 
   return (
     <Link
+      prefetch={true}
       className={cn(
         'duration-200 hover:text-red-600',
         to === pathname && 'text-red-600',
