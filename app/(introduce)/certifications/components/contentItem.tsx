@@ -1,8 +1,8 @@
 'use client';
-import { DataType } from '@/app/(introduce)/certifications/page';
 import { useModalStore } from '@/store/modalStore';
 import { ExternalLinkIcon } from 'lucide-react';
 import React from 'react';
+import { TypeCertification } from '@/data/certifications';
 
 export function ContentItem({
   title,
@@ -11,7 +11,7 @@ export function ContentItem({
   link,
   isModal,
   index,
-}: DataType & { index: number }) {
+}: TypeCertification & { index: number }) {
   const { openModal } = useModalStore();
   return (
     <div

@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
-import { DataType } from '@/app/(introduce)/skills/page';
 
-export function Content({ title, data }: { data: DataType[]; title: string }) {
+import { TypeSkill } from '@/data/skills';
+
+export function Content({ title, data }: { data: TypeSkill[]; title: string }) {
   return (
     <div className={'flex w-full flex-col items-center gap-4'}>
       <ContentTitle label={title} />

@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import { LinkOutBtn } from '@/app/(introduce)/projects/components/linkOutBtn';
 import ImgContentRenderer from '@/app/(introduce)/projects/components/ImgContentRenderer';
-import { data, DataType } from '@/data/projects';
+import { data, TypeProject } from '@/data/projects';
 import ScrollToHash from '@/app/(introduce)/projects/components/ScrollToHash';
 
 export default async function ProjectPage() {
@@ -12,7 +12,7 @@ export default async function ProjectPage() {
     <div className={'flex h-full flex-1 justify-center pt-[20px] md:px-10'}>
       <ScrollToHash />
       <div className={'flex w-[1200px] flex-col gap-[50px]'}>
-        {data.map((item: DataType, index: number) => {
+        {data.map((item: TypeProject, index: number) => {
           const isLast = index === data.length - 1;
           return (
             <div

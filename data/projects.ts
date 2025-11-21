@@ -1,4 +1,4 @@
-export type DataType = {
+export type TypeProject = {
   title: string;
   id: string;
   type: 'company' | 'toy';
@@ -21,7 +21,7 @@ export type DataType = {
   images: string[];
 };
 
-export const data: DataType[] = [
+export const data: TypeProject[] = [
   {
     title: 'Introduce Site',
     id: 'introduce-site',
@@ -92,7 +92,7 @@ export const data: DataType[] = [
       'node:fs',
     ],
     introduction: [
-      '개인적으로 사용할 기능들 모아서 개인앱처럼 쓸려고 만든 Private App입니다.',
+      '개인적으로 사용할 기능들 모아서 개인 앱처럼 쓸려고 만든 Private App입니다.',
       '이전 토이프로젝트들 규모를 너무 크게 잡고가서 전부 완료를 못했기에 초기기획만 잡고',
       '필요할때 기능이나 페이지 추가하는 식으로 개발 진행했고 앞으로도 기능 추가가 있을 예정입니다.',
       '영어학원에 있는 로컬앱과 인턴시절 엑셀파일로 데이터를 저장하여 비개발자들도 데이터를 수정할 수 있었던거에 영감을 받았고',
