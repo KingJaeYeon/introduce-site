@@ -20,8 +20,8 @@ export const data: TypeProfessional[] = [
     description: '박재연',
     content: (
       <>
-        저는 1년 8개월 차 풀스택 개발자입니다. Java로 프로그램 공부를 자
-        시작했지만 스타트업에 들어가서{' '}
+        저는 1년 8개월 차 풀스택 개발자입니다. Java로 프로그램 공부를 시작했지만
+        스타트업에 들어가서{' '}
         <span className={'font-semibold'}>
           사용자와 직접 맞닿는 화면을 구현하는 일에 매력을 느꼈고 AI시대에
           양쪽다 하는게 메리트가 있다고 생각해 현재는 프론트 개발은 NextJS,
