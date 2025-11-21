@@ -22,10 +22,14 @@ export default function Page() {
       </div>
       <div
         className={
-          'mb-[10rem] grid w-full grid-cols-2 items-center justify-center gap-8 px-8 sm:flex sm:gap-5 sm:gap-10 sm:px-10'
+          'mb-[10rem] grid w-full grid-cols-2 items-center justify-center gap-8 px-8 sm:flex sm:gap-5 sm:px-10'
         }
       >
-        <Card link={''} src={Profile01} label={'이력서'} />
+        <Card
+          link={'/professional'}
+          src={Profile01}
+          label={'소개 & 타임라인'}
+        />
         <Card link={'/projects'} src={Profile02} label={'프로젝트'} />
         <Card link={'/skills'} src={Profile03} label={'스킬'} />
         <Card link={'/certifications'} src={Profile04} label={'인증'} />

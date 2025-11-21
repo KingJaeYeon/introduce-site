@@ -58,7 +58,11 @@ export default function TitleBarMB() {
           </SheetTitle>
           <div className={'flex flex-col gap-6 px-7 py-4 text-xl'}>
             <NavLink icon={Home} label={'Home'} to={'/browse'} />
-            <NavLink icon={Briefcase} label={'Professional'} to={'/browse'} />
+            <NavLink
+              icon={Briefcase}
+              label={'Professional'}
+              to={'/professional'}
+            />
             <NavLink icon={Swords} label={'Skills'} to={'/skills'} />
             <NavLink icon={FolderGitIcon} label={'Projects'} to={'/projects'} />
             <NavLink
