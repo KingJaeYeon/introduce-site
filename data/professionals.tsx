@@ -42,11 +42,11 @@ export const data: TypeProfessional[] = [
           label={'깃허브'}
           icon={<Github />}
         />
-        <LinkButton
-          link={'https://github.com/KingJaeYeon'}
-          label={'이력서'}
-          icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}
-        />
+        {/*<LinkButton*/}
+        {/*  link={'https://github.com/KingJaeYeon'}*/}
+        {/*  label={'이력서'}*/}
+        {/*  icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}*/}
+        {/*/>*/}
       </>
     ),
   },
