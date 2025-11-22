@@ -63,7 +63,6 @@ function Card({
           src={src}
           alt={'profile01'}
           className={'absolute top-0 h-full object-cover'}
-          priority
           loading="lazy"
         />
       </div>
