@@ -44,6 +44,8 @@ export const data: TypeProject[] = [
       'ScrollTop 버튼 구현',
       'zustand 기반 modalRenderer를 구현해서 추후에 modal 추가하기 용이',
       'svg viewbox 크게 잡혀있으면 @svgr/webpack 처리 / viewbox 18~24는 컴포넌트화',
+      'metadata, sitemap에 사용되는 page정보 json으로 관리',
+      'vercel speed-insights 양호',
     ],
     role: [],
     links: [
@@ -54,6 +56,7 @@ export const data: TypeProject[] = [
       { label: '보기', href: 'https://introduce-site-three.vercel.app' },
     ],
     images: [
+      '/projects/introduce-site/img11.png',
       '/projects/introduce-site/img03.png',
       '/projects/introduce-site/img08.png',
       '/projects/introduce-site/img10.png',
