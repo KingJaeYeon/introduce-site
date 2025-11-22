@@ -64,6 +64,7 @@ function Card({
           alt={'profile01'}
           className={'absolute top-0 h-full object-cover'}
           priority
+          loading="lazy"
         />
       </div>
       <p className={'text-center text-lg font-semibold'}>{label}</p>
