@@ -2,6 +2,12 @@ import React from 'react';
 
 import { Content } from '@/app/(introduce)/skills/components/content';
 import { backend, cloud, db, frontend, tools } from '@/data/skills';
+import { Metadata } from 'next';
+import { getMetadata } from '@/lib/getMetadata';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getMetadata('/skills');
+}
 
 export default function SkillPage() {
   return (

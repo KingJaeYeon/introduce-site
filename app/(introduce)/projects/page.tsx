@@ -6,6 +6,12 @@ import { LinkOutBtn } from '@/app/(introduce)/projects/components/linkOutBtn';
 import ImgContentRenderer from '@/app/(introduce)/projects/components/ImgContentRenderer';
 import { data, TypeProject } from '@/data/projects';
 import ScrollToHash from '@/app/(introduce)/projects/components/ScrollToHash';
+import { Metadata } from 'next';
+import { getMetadata } from '@/lib/getMetadata';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getMetadata('/projects');
+}
 
 export default async function ProjectPage() {
   return (

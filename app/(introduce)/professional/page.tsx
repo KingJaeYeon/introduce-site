@@ -5,6 +5,12 @@ import {
   ContentTitle,
 } from '@/app/(introduce)/professional/components/Content';
 import { ContentIcon } from '@/app/(introduce)/professional/components/ContentIcon';
+import { Metadata } from 'next';
+import { getMetadata } from '@/lib/getMetadata';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getMetadata('/professional');
+}
 
 export default function ProfessionalPage() {
   return (

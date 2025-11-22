@@ -1,0 +1,22 @@
+{
+  "/": {
+    "title": "Introduce Site - 박재연",
+    "description": "포토폴리오 사이트입니다."
+  },
+  "/skills": {
+    "title": "Skills",
+    "description": "Stack 소개 페이지"
+  },
+  "/projects": {
+    "title": "Projects",
+    "description": "지금까지 해온 프로젝트 소개"
+  },
+  "/professional": {
+    "title": "Professional",
+    "description": "소개 & 타임라인 페이지"
+  },
+  "/certifications": {
+    "title": "Certifications",
+    "description": "자격증 및 수료증"
+  }
+}

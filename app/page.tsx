@@ -1,4 +1,10 @@
 import { Title } from '@/app/components/Title';
+import { getMetadata } from '@/lib/getMetadata';
+import { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getMetadata('/');
+}
 
 export default function Home() {
   return (

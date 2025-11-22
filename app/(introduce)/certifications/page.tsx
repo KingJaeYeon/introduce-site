@@ -1,6 +1,12 @@
 import React from 'react';
 import { data } from '@/data/certifications';
 import { ContentItem } from '@/app/(introduce)/certifications/components/contentItem';
+import { Metadata } from 'next';
+import { getMetadata } from '@/lib/getMetadata';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getMetadata('/certifications');
+}
 
 export default function CertificationPage() {
   return (
