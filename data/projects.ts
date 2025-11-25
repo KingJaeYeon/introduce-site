@@ -214,10 +214,6 @@ export const data: TypeProject[] = [
       frameworks: ['NextJS', 'NestJS'],
       developers: '5명',
     },
-    introduction: [
-      '퇴사직전에 진행했었던 프로젝트입니다.',
-      '회사 자금상황이 좋지 않았고 월급도 밀렸지만 오픈까지는 마무리하고 퇴사했습니다.',
-    ].join('\n'),
     duration: '2024.09 ~ 2025.01.31(퇴사)',
     libraries: [
       'shadcn',
@@ -234,6 +230,7 @@ export const data: TypeProject[] = [
       'zod',
       'prisma',
     ],
+    introduction: '',
     functions: [
       '다수의 해외 게임 벤더 API를 통합하여 운영되는 대규모 트랜잭션 기반 플랫폼',
       [

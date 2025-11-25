@@ -130,11 +130,8 @@ export const data: TypeProfessional[] = [
           {'🗝️ NextJS, NestJS, PostgreSQL'}
         </div>
         <p className={'whitespace-pre-wrap'}>
-          {[
-            '퇴사직전에 진행했었던 프로젝트입니다.',
-            '회사 자금상황이 좋지 않았고 월급도 밀렸지만 오픈까지는 마무리하고 퇴사했습니다.',
-            '퇴사 후 몇달 뒤에 회사는 폐업했습니다.',
-          ].join('\n')}
+          다수의 해외 게임 벤더 API를 통합하여 운영되는 대규모 트랜잭션 기반
+          플랫폼
         </p>
       </>
     ),
