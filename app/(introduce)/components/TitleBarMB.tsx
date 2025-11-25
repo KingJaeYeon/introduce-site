@@ -56,7 +56,9 @@ export default function TitleBarMB() {
           <SheetTitle>
             <Image src={TitleLogo} alt={'logo'} priority />
           </SheetTitle>
-          <div className={'flex flex-col gap-6 px-7 py-4 text-xl'}>
+          <div
+            className={'flex flex-col gap-3 py-4 sm:gap-6 sm:px-7 sm:text-xl'}
+          >
             <NavLink icon={Home} label={'Home'} to={'/browse'} />
             <NavLink
               icon={Briefcase}
@@ -88,7 +90,7 @@ function NavLink({
 }) {
   return (
     <Link href={to} className={'flex items-center gap-2'}>
-      {<props.icon />}
+      {<props.icon className={'size-4 sm:size-5'} />}
       {label}
     </Link>
   );
