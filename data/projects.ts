@@ -143,7 +143,7 @@ export const data: TypeProject[] = [
       ].join('\n'),
       [
         'Prompt & Reference',
-        '- Reference 의 경우 data-tabel로 관리만 하고 View는 webview를 사용해서 사이트를 확인(Iframe은 특정사이트는 불가)',
+        '- Reference 의 경우 data-table로 관리만 하고 View는 webview를 사용해서 사이트를 확인(Iframe은 특정사이트는 불가)',
         '- webview는 react-virtual 사용해서 화면에 나오는 4개만 랜더링되게 구현.(webview 4개띄우는건 무리 안간다고 판단)',
         '- 하위 계층 구조로 아래 같이 사용할려고 구조를 설계',
         '\nUI참고레퍼런스사이트',
