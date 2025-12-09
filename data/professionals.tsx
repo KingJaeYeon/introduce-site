@@ -52,6 +52,28 @@ export const data: TypeProfessional[] = [
   },
   {
     type: 'toy',
+    title: 'private-app-server',
+    description: 'Toy Project',
+    content: (
+      <>
+        <div className={'mb-3 font-medium'}>🗝️ NestJS</div>
+        <p>
+          이전 private-app을 웹사이트 만들기 위해 다수가 사용할 수 있게 구조
+          변경하여 server 작업
+        </p>
+      </>
+    ),
+    side: (
+      <LinkButton
+        link={`/projects#private-app-server`}
+        icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}
+        label={'2025.11.30 ~'}
+        align={'right'}
+      />
+    ),
+  },
+  {
+    type: 'toy',
     title: '포토폴리오 사이트',
     description: 'Toy Project',
     content: (
